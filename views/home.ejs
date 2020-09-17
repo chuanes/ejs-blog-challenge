@@ -1,0 +1,22 @@
+<%-include('partials/header');-%>
+
+<h1><%=pageTitle%></h1>
+
+<p><%= startingContent %></p>
+
+
+<% postsStored.forEach(function(post){%>
+
+  <h2>
+    <%= post.title%>
+    </h2>
+
+     <p>
+       <%= _.truncate(post.content, {"length": 104, "omission": ' ...'}) %>
+       <a href= "/posts/<%=post.titleURL%>">Read More</a>
+     </p>
+
+<%})%>
+
+
+<%-include('partials/footer');-%>

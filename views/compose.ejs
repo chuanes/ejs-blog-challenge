@@ -1,0 +1,16 @@
+<%-include('partials/header');-%>
+
+<h1><%=pageTitle%></h1>
+
+<form class="" action="/" method="post">
+  <label for="postTitle">Title</label>
+    <input type="text" name="postTitle" id="postTitle" class="form-control">
+    <label for="postTitle">Post</label>
+    <textarea class="form-control" rows="4" cols="50" name="postBody" required></textarea>
+
+    <button style="margin-top:10px" type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+
+
+
+<%-include('partials/footer');-%>
